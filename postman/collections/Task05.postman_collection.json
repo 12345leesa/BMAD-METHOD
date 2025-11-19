@@ -1,0 +1,234 @@
+{
+  "info": {
+    "_postman_id": "3f8ccc97-62cf-4733-baac-a0d581e34f9b",
+    "name": "Task05",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "http://localhost:3000/agent/start",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/agent/start",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "agent",
+            "start"
+          ]
+        }
+      }
+    },
+    {
+      "name": ".tmpost",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"query\": \"Hello AI Agent, explain my Task 05.\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/agent/query",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "agent",
+            "query"
+          ]
+        }
+      }
+    },
+    {
+      "name": ".tmpost01",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"query\": \"Hello! Tell me about yourself.\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/agent/query",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "agent",
+            "query"
+          ]
+        }
+      }
+    },
+    {
+      "name": ".tmpos02",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"query\": \"Write a short motivational message for developers.\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/agent/query",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "agent",
+            "query"
+          ]
+        }
+      }
+    },
+    {
+      "name": ".tmpos doc01",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:8080/agent/start",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "agent",
+            "start"
+          ]
+        }
+      }
+    },
+    {
+      "name": ".tmpos doc02",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"query\": \"Hello AI! Can you help me with my project?\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/agent/query",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "agent",
+            "query"
+          ]
+        }
+      }
+    },
+    {
+      "name": ".tmpos 10.57",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:3000/agent/start",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "agent",
+            "start"
+          ]
+        }
+      }
+    },
+    {
+      "name": ".tmpos doc 11.03",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:8080/agent/start",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "agent",
+            "start"
+          ]
+        }
+      }
+    },
+    {
+      "name": ".tmpos 10.12",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:3000/agent/start",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "agent",
+            "start"
+          ]
+        }
+      }
+    },
+    {
+      "name": ".tmpos doc 10.14",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:8080/agent/start",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "agent",
+            "start"
+          ]
+        }
+      }
+    }
+  ]
+}

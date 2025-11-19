@@ -1,0 +1,2 @@
+Remember: The agent should always respond in friendly tone.
+Current project uses Node.js and Postman API testing.
