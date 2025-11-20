@@ -10,30 +10,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout code
-      - name: Checkout repository
+      # Step 1: Checkout main repo
+      - name: Checkout main repo
         uses: actions/checkout@v4
 
-      # Step 2: Set up Google Cloud SDK
-      - name: Set up Cloud SDK
-        uses: google-github-actions/setup-gcloud@v1
+      # Step 2: Checkout BMAD Bundles repo
+      - name: Checkout BMAD Bundles
+        uses: actions/checkout@v4
         with:
-          service_account_key: ${{ secrets.GCP_SA_KEY }}
-          project_id: my-cloud-run-app-478713
+          repository: bmad-code-org/bmad-bundles
+          path: bmad-bundles
+          token: ${{ secrets.BMAD_BUNDLES_TOKEN }}
 
-      # Step 3: Build and push Docker image to Artifact Registry
+      # Step 3: Authenticate to GCP
+      - name: Authenticate GCP
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      # Step 4: Build and push Docker image
       - name: Build and push Docker image
         run: |
-          IMAGE="asia-south1-docker.pkg.dev/my-cloud-run-app-478713/my-repo/myapp:${GITHUB_SHA}"
-          # Create repo if it doesn't exist
-          gcloud artifacts repositories create my-repo --repository-format=docker --location=asia-south1 || true
+          IMAGE="asia-south1-docker.pkg.dev/<PROJECT_ID>/<REPO_NAME>/bmad-agent:${GITHUB_SHA}"
+          gcloud artifacts repositories create <REPO_NAME> --repository-format=docker --location asia-south1 || true
           docker build -t $IMAGE .
           docker push $IMAGE
 
-      # Step 4: Deploy to Cloud Run
+      # Step 5: Deploy to Cloud Run
       - name: Deploy to Cloud Run
         run: |
-          gcloud run deploy myapp \
+          gcloud run deploy bmad-agent \
             --image $IMAGE \
             --region asia-south1 \
             --platform managed \
