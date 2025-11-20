@@ -1,143 +1,17 @@
 {
   "info": {
-    "_postman_id": "24b955c7-c0e9-4d46-a638-52c0b0174e97",
-    "name": "Task05",
+    "_postman_id": "0684617a-cf34-483b-b882-e46720128b41",
+    "name": "task05",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
-      "name": "http://localhost:3000/agent/start",
+      "name": "http://localhost:8080/agent/query",
       "request": {
         "method": "POST",
         "body": {
           "mode": "raw",
-          "raw": "",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "http://localhost:3000/agent/start",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "3000",
-          "path": [
-            "agent",
-            "start"
-          ]
-        }
-      }
-    },
-    {
-      "name": ".tmpost",
-      "request": {
-        "method": "POST",
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n  \"query\": \"Hello AI Agent, explain my Task 05.\"\r\n}\r\n",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "http://localhost:3000/agent/query",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "3000",
-          "path": [
-            "agent",
-            "query"
-          ]
-        }
-      }
-    },
-    {
-      "name": ".tmpost01",
-      "request": {
-        "method": "POST",
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n  \"query\": \"Hello! Tell me about yourself.\"\r\n}\r\n",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "http://localhost:3000/agent/query",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "3000",
-          "path": [
-            "agent",
-            "query"
-          ]
-        }
-      }
-    },
-    {
-      "name": ".tmpos02",
-      "request": {
-        "method": "POST",
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n  \"query\": \"Write a short motivational message for developers.\"\r\n}\r\n",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "http://localhost:3000/agent/query",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "3000",
-          "path": [
-            "agent",
-            "query"
-          ]
-        }
-      }
-    },
-    {
-      "name": ".tmpos doc01",
-      "request": {
-        "method": "POST",
-        "url": {
-          "raw": "http://localhost:8080/agent/start",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "agent",
-            "start"
-          ]
-        }
-      }
-    },
-    {
-      "name": ".tmpos doc02",
-      "request": {
-        "method": "POST",
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n  \"query\": \"Hello AI! Can you help me with my project?\"\r\n}\r\n",
+          "raw": "{\r\n  \"query\": \"Hello AI! Can you explain my Task 05?\"\r\n}\r\n",
           "options": {
             "raw": {
               "language": "json"
@@ -159,29 +33,20 @@
       }
     },
     {
-      "name": ".tmpos 10.57",
+      "name": "http://localhost:8080/agent/query",
       "request": {
         "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"query\": \"Hello AI! How are you today?\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
-          "raw": "http://localhost:3000/agent/start",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "3000",
-          "path": [
-            "agent",
-            "start"
-          ]
-        }
-      }
-    },
-    {
-      "name": ".tmpos doc 11.03",
-      "request": {
-        "method": "POST",
-        "url": {
-          "raw": "http://localhost:8080/agent/start",
+          "raw": "http://localhost:8080/agent/query",
           "protocol": "http",
           "host": [
             "localhost"
@@ -189,35 +54,26 @@
           "port": "8080",
           "path": [
             "agent",
-            "start"
+            "query"
           ]
         }
       }
     },
     {
-      "name": ".tmpos 10.12",
+      "name": "http://localhost:8080/agent/query",
       "request": {
         "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"query\": \"Can you summarize artificial intelligence in simple words?\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
-          "raw": "http://localhost:3000/agent/start",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "3000",
-          "path": [
-            "agent",
-            "start"
-          ]
-        }
-      }
-    },
-    {
-      "name": ".tmpos doc 10.14",
-      "request": {
-        "method": "POST",
-        "url": {
-          "raw": "http://localhost:8080/agent/start",
+          "raw": "http://localhost:8080/agent/query",
           "protocol": "http",
           "host": [
             "localhost"
@@ -225,7 +81,99 @@
           "port": "8080",
           "path": [
             "agent",
-            "start"
+            "query"
+          ]
+        }
+      }
+    },
+    {
+      "name": "http://13.48.3.215:8080/agent/query",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text",
+            "uuid": "386e2f9b-20f2-46c7-9589-9a34008fbb17"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"content\": \"Hello AI! Can you explain my Task 05?\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/agent/query",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "agent",
+            "query"
+          ]
+        }
+      }
+    },
+    {
+      "name": "http://localhost:8080/agent/query",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"query\": \"Hello AI! How are you today?\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/agent/query",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "agent",
+            "query"
+          ]
+        }
+      }
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"query\": \"Hello AI! Can you explain my Task 05?\"\r\n \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8080/agent/query",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "agent",
+            "query"
           ]
         }
       }
@@ -244,13 +192,103 @@
           }
         },
         "url": {
-          "raw": "http://13.60.74.24:8080/agent/query",
+          "raw": "http://127.0.0.1:8080/agent/query",
           "protocol": "http",
           "host": [
-            "13",
-            "60",
-            "74",
-            "24"
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "agent",
+            "query"
+          ]
+        }
+      }
+    },
+    {
+      "name": ".tmpos L1",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"query\": \"Tell me a joke\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8080/agent/query",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "agent",
+            "query"
+          ]
+        }
+      }
+    },
+    {
+      "name": ".tmpos L2",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"query\": \"What is the weather like today?\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8080/agent/query",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "agent",
+            "query"
+          ]
+        }
+      }
+    },
+    {
+      "name": ".tmpos L3",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"query\": \"Explain BMAD method in simple words\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8080/agent/query",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
           ],
           "port": "8080",
           "path": [

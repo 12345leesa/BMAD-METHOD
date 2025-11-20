@@ -1,20 +1,33 @@
-# Use official Node.js LTS image
-FROM node:22
+# Use Node.js image
+FROM node:18
 
 # Set working directory
 WORKDIR /app
 
-# Copy package files for dependencies
+# Copy package.json and package-lock.json first
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install --production
+# Install all dependencies (dev + prod)
+RUN npm install
 
-# Copy the rest of the project
+# Optional: remove devDependencies to make image smaller
+RUN npm prune --production
+
+# Copy rest of the project
 COPY . .
 
-# Expose port
-EXPOSE 8080
+# Expose port if needed
+EXPOSE 3000
 
-# Start the agent
+# Start the app
 CMD ["node", "src/modules/my-first-agent/index.js"]
+
+WORKDIR /app
+COPY package*.json ./
+
+# Disable husky hooks in container
+ENV HUSKY=0
+RUN npm install --production
+
+
+
