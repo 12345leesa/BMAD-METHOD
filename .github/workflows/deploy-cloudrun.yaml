@@ -31,10 +31,13 @@ jobs:
       # Step 4: Build and push Docker image
       - name: Build and push Docker image
         run: |
-          IMAGE="asia-south1-docker.pkg.dev/<PROJECT_ID>/<REPO_NAME>/bmad-agent:${GITHUB_SHA}"
-          gcloud artifacts repositories create <REPO_NAME> --repository-format=docker --location asia-south1 || true
+          IMAGE="asia-south1-docker.pkg.dev/task05-478717/bmad-repo/bmad-agent:${GITHUB_SHA}"
+          gcloud artifacts repositories create bmad-repo --repository-format=docker --location asia-south1 || true
+          gcloud auth configure-docker asia-south1-docker.pkg.dev
           docker build -t $IMAGE .
           docker push $IMAGE
+
+
 
       # Step 5: Deploy to Cloud Run
       - name: Deploy to Cloud Run
